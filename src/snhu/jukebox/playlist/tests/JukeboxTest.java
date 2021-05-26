@@ -32,16 +32,16 @@ public class JukeboxTest {
 		 assertEquals(3, adelesTracks.size());
 	}
 
-	@Test
-	public void testGetBurtBacharachAlbumSize() throws NoSuchFieldException, SecurityException { // added by p.enkema
+	@Test     // added by p.enkema
+	public void testGetBurtBacharachAlbumSize() throws NoSuchFieldException, SecurityException {
 		 BurtBacharach burtBacharach = new BurtBacharach();
 		 ArrayList<Song> burtBacharachTracks = new ArrayList<Song>();
 		 burtBacharachTracks = burtBacharach.getBurtBacharachSongs();
 		 assertEquals(3, burtBacharachTracks.size());
 	}
 
-	@Test
-	public void testGetHerbAlpertAlbumSize() throws NoSuchFieldException, SecurityException {    // added by p.enkema
+	@Test     // added by p.enkema
+	public void testGetHerbAlpertAlbumSize() throws NoSuchFieldException, SecurityException {
 		 HerbAlpert herbAlpert = new HerbAlpert();
 		 ArrayList<Song> herbAlpertTracks = new ArrayList<Song>();
 		 herbAlpertTracks = herbAlpert.getHerbAlpertSongs();
