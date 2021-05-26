@@ -39,8 +39,7 @@ public class StudentTest {
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
 		assertEquals("Philip Enkema", studentNames.get(2));				     			//test case to see if the third value contains the name we expect
 	}
-	
-	
+		
 	//Module 6 Test Case Area
 	//Test each student profile to ensure it can be retrieved and accessed
 	@Test
