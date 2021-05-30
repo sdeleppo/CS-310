@@ -53,6 +53,6 @@ public class JukeboxTest {
 		 Interpol interPol = new Interpol();
 		 ArrayList<Song> interPolTracks = new ArrayList<Song>();
 		 interPolTracks = interPol.getInterpolSongs();
-		 assertEquals(2, interPolTracks.size());
+		 assertEquals(5, interPolTracks.size());
 	}
 }
