@@ -25,8 +25,12 @@ public class StudentList {
 		//String StudentName3 = "TestStudent3Name";
 		//studentNames.add(StudentName3);
 		
+		
 		String StudentName3 = "Philip Enkema";  // added instructor as student 3
 		studentNames.add(StudentName3);
+		
+		String SarahDeleppo = "Sarah Deleppo"; //create string with name
+		studentNames.add(SarahDeleppo); // add SarahDeleppo string to list of student names
 		
 		return studentNames;
 	}
