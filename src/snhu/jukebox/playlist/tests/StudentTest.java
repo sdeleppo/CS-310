@@ -41,7 +41,7 @@ public class StudentTest {
 	}
 	
 	@Test
-	public void testContainsSarahDeleppoList() {
+	public void testContainsSarahDeleppoList() { //added by Sarah Deleppo
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
