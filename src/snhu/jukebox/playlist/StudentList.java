@@ -19,6 +19,9 @@ public class StudentList {
 		String StudentName2 = "TestStudent2Name";
 		studentNames.add(StudentName2);
 		
+		String SyndaSimmers = "Synda Simmers";
+		studentNames.add(SyndaSimmers);
+		
 		//Module 5 Code Assignment
 		//Add your name to create a new student profile
 		//Use template below and put your name in the areas of 'StudentName'
@@ -61,6 +64,11 @@ public class StudentList {
 			   PhilipEnkema_Playlist PhilipEnkemaPlaylist = new PhilipEnkema_Playlist();
 			   Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkemaPlaylist.StudentPlaylist());
 			   return PhilipEnkema;
+			   
+		   case "SyndaSimmers_Playlist":
+			   SyndaSimmers_Playlist SyndaSimmersPlaylist = new SyndaSimmers_Playlist();
+			   Student SyndaSimmers = new Student("Synda Simmers", SyndaSimmersPlaylist.StudentPlaylist());
+			   return SyndaSimmers;
 		}
 		return emptyStudent;
 	}
