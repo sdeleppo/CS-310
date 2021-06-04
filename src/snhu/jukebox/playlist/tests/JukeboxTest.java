@@ -63,4 +63,18 @@ public class JukeboxTest {
 		 herbAlpertTracks = herbAlpert.getHerbAlpertSongs();
 		 assertEquals(2, herbAlpertTracks.size());
 	}
+	@Test //added by Kate Kowalyshyn
+	public void testGetMorganWallenAlbumSize() throws NoSuchFieldException, SecurityException {
+		 MorganWallen morganWallen = new MorganWallen();	//create instance of Morgan Wallen class
+		 ArrayList<Song> morganWallenTracks = new ArrayList<Song>(); //create list for Morgan Wallen tracks
+		 morganWallenTracks = morganWallen.getMorganWallenSongs(); //populate list with Morgan Wallen tracks from Morgan Wallen class
+		 assertEquals(3, morganWallenTracks.size()); //assert that there are 3 songs in track list
+	}
+	@Test //added by Kate Kowalyshyn
+	public void testGetEricChurchAlbumSize() throws NoSuchFieldException, SecurityException {
+		 EricChurch ericChurch = new EricChurch();	//create instance of Eric Church class
+		 ArrayList<Song> ericChurchTracks = new ArrayList<Song>(); //create list for Eric Church tracks
+		 ericChurchTracks = ericChurch.getEricChurchSongs(); //populate list with Eric Church tracks from Eric Church class
+		 assertEquals(2, ericChurchTracks.size()); //assert that there are 2 songs in track list
+	}
 }
