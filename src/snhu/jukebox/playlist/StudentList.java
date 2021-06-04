@@ -32,6 +32,9 @@ public class StudentList {
 		String SarahDeleppo = "Sarah Deleppo"; //create string with name
 		studentNames.add(SarahDeleppo); // add SarahDeleppo string to list of student names
 		
+		String KateKowalyshyn = "Kate Kowalyshyn"; //create string with name
+		studentNames.add(KateKowalyshyn); // add SarahDeleppo string to list of student names
+		
 		return studentNames;
 	}
 
