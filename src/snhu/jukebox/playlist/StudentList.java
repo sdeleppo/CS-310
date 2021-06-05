@@ -28,6 +28,9 @@ public class StudentList {
 		String StudentName3 = "Philip Enkema";  // added instructor as student 3
 		studentNames.add(StudentName3);
 		
+		String StudentName4 = "Homar Sanchez";  // added myself as student 4
+		studentNames.add(StudentName4);
+		
 		return studentNames;
 	}
 
