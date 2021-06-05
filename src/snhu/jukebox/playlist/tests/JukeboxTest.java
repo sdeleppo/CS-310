@@ -47,4 +47,12 @@ public class JukeboxTest {
 		 herbAlpertTracks = herbAlpert.getHerbAlpertSongs();
 		 assertEquals(2, herbAlpertTracks.size());
 	}
+	
+	@Test     // added by g.swortwood
+	public void testGetInterpolAlbumSize() throws NoSuchFieldException, SecurityException {
+		 Interpol interPol = new Interpol();
+		 ArrayList<Song> interPolTracks = new ArrayList<Song>();
+		 interPolTracks = interPol.getInterpolSongs();
+		 assertEquals(5, interPolTracks.size());
+	}
 }
