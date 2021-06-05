@@ -62,6 +62,14 @@ public class StudentTest {
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
 		assertEquals("Kate Kowalyshyn", studentNames.get(5));							//test case to see if the third value contains the name we expect
 	}	
+	
+	@Test
+	public void testContainsMichaelDarlingList() {
+		List<String> studentNames = new ArrayList<String>();							// Declare and instantiate a list that will hold student names.
+		StudentList studentList = new StudentList();									// Declare and instantiate a StudentList object.
+		studentNames = studentList.getStudentsNames();									// Populate the studentNames list with the actual values in the StudentsList object.
+		assertTrue(studentNames.contains("Michael Darling"));							// Test case for pass/fail. Check to see if studentList contains name "Michael Darling", does not rely on arraylist index.
+	}
 		
 	//Module 6 Test Case Area
 	//Test each student profile to ensure it can be retrieved and accessed
