@@ -68,6 +68,11 @@ public class StudentList {
 			   PhilipEnkema_Playlist PhilipEnkemaPlaylist = new PhilipEnkema_Playlist();
 			   Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkemaPlaylist.StudentPlaylist());
 			   return PhilipEnkema;
+			   
+		   case "KateKowalyshyn_Playlist":
+			  KateKowalyshyn_Playlist KateKowalyshynPlaylist = new KateKowalyshyn_Playlist();
+			   Student KateKowalyshyn = new Student("Kate Kowalyshyn",KateKowalyshynPlaylist.StudentPlaylist());
+			   return KateKowalyshyn;
 		}
 		return emptyStudent;
 	}
