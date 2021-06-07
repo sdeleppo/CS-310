@@ -37,6 +37,13 @@ public class StudentList {
 		
 		String KateKowalyshyn = "Kate Kowalyshyn"; //create string with name
 		studentNames.add(KateKowalyshyn); // add KateKowalyshyn string to list of student names
+
+		String StudentName7 = "Jeremy Morrison";   //added Jeremy Morrison as student 4 - updated to student 7 by KateKowalyshyn
+		studentNames.add(StudentName7);
+		
+		String StudentName8 = "Dakota Cromer";//added Dakota Cromer as student 5- updated to student 8 by KateKowalyshyn
+		studentNames.add(StudentName8);
+
 		
 		return studentNames;
 	}
