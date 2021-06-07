@@ -31,6 +31,9 @@ public class StudentList {
 		String StudentName4 = "Jeremy Morrison";   //added Jeremy Morrison as student 4
 		studentNames.add(StudentName4);
 		
+		String StudentName5 = "Dakota Cromer";//added Dakota Cromer as student 5
+		studentNames.add(StudentName5);
+		
 		return studentNames;
 	}
 
