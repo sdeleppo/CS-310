@@ -76,6 +76,11 @@ public class StudentList {
 			  KateKowalyshyn_Playlist KateKowalyshynPlaylist = new KateKowalyshyn_Playlist();
 			   Student KateKowalyshyn = new Student("Kate Kowalyshyn",KateKowalyshynPlaylist.StudentPlaylist());
 			   return KateKowalyshyn;
+
+		   case "TysonSmith_Playlist":
+			   TysonSmith_Playlist tysonSmithPlaylist = new TysonSmith_Playlist();
+			   Student tysonSmith = new Student("Tyson Smith", tysonSmithPlaylist.StudentPlaylist());
+			   return tysonSmith;
 		}
 		return emptyStudent;
 	}
