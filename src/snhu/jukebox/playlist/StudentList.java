@@ -37,6 +37,13 @@ public class StudentList {
 		
 		String KateKowalyshyn = "Kate Kowalyshyn"; //create string with name
 		studentNames.add(KateKowalyshyn); // add KateKowalyshyn string to list of student names
+
+		String StudentName7 = "Jeremy Morrison";   //added Jeremy Morrison as student 4 - updated to student 7 by KateKowalyshyn
+		studentNames.add(StudentName7);
+		
+		String StudentName8 = "Dakota Cromer";//added Dakota Cromer as student 5- updated to student 8 by KateKowalyshyn
+		studentNames.add(StudentName8);
+
 		
 		String MichaelDarling = "Michael Darling";
 		studentNames.add(MichaelDarling); // Adding MichaelDarling to list of student names.
@@ -64,6 +71,11 @@ public class StudentList {
 			   PhilipEnkema_Playlist PhilipEnkemaPlaylist = new PhilipEnkema_Playlist();
 			   Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkemaPlaylist.StudentPlaylist());
 			   return PhilipEnkema;
+			   
+		   case "KateKowalyshyn_Playlist":
+			  KateKowalyshyn_Playlist KateKowalyshynPlaylist = new KateKowalyshyn_Playlist();
+			   Student KateKowalyshyn = new Student("Kate Kowalyshyn",KateKowalyshynPlaylist.StudentPlaylist());
+			   return KateKowalyshyn;
 		}
 		return emptyStudent;
 	}
