@@ -78,10 +78,17 @@ public class StudentList {
 			   Student KateKowalyshyn = new Student("Kate Kowalyshyn",KateKowalyshynPlaylist.StudentPlaylist());
 			   return KateKowalyshyn;
 			   
+
 		   case "GabrielSwortwood_Playlist":
 				  GabrielSwortwood_Playlist GabrielSwortwood_Playlist = new GabrielSwortwood_Playlist();
 				   Student GabrielSwortwood = new Student("Gabriel Swortwood", GabrielSwortwood_Playlist.StudentPlaylist());
 				   return GabrielSwortwood;
+
+		   case "SarahDeleppo_Playlist": //define new student Sarah Deleppo with associated playlist
+			   SarahDeleppo_Playlist SarahDeleppo_Playlist = new SarahDeleppo_Playlist();
+			   Student SarahDeleppo = new Student("Sarah Deleppo", SarahDeleppo_Playlist.StudentPlaylist());
+			   return SarahDeleppo;
+
 		}
 		return emptyStudent;
 	}
