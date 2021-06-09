@@ -42,11 +42,11 @@ public class StudentTest {
 	
 	
 	@Test
-	public void testGetHomarSanchezList4() {
+	public void testGetHomarSanchezList9() {
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
-		assertEquals("Homar Sanchez", studentNames.get(3));				     			//test case to see if the third value contains the name we expect
+		assertEquals("Homar Sanchez", studentNames.get(8));				     			//test case to see if the third value contains the name we expect
 	}
 		
 	//Module 6 Test Case Area
