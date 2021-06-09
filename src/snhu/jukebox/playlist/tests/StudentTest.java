@@ -122,7 +122,7 @@ public class StudentTest {
 	}
 		
 	@Test
-	public void testGetGabrielSwortwoodProfile() {     // added instructor profile test
+	public void testGetGabrielSwortwoodProfile() {     // added student profile test
 		GabrielSwortwood_Playlist GabrielSwortwood_Playlist = new GabrielSwortwood_Playlist();
 		Student GabrielSwortwood = new Student("Gabriel Swortwood", GabrielSwortwood_Playlist.StudentPlaylist());
 		assertEquals("Gabriel Swortwood", GabrielSwortwood.getName());
