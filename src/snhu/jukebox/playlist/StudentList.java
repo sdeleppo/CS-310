@@ -25,9 +25,11 @@ public class StudentList {
 		//String StudentName3 = "TestStudent3Name";
 		//studentNames.add(StudentName3);
 		
-		
 		String StudentName3 = "Philip Enkema";  // added instructor as student 3
 		studentNames.add(StudentName3);
+		
+		String StudentName4 = "Tennyson McCalla";
+		studentNames.add(StudentName4);
 		
 		String SarahDeleppo = "Sarah Deleppo"; //create string with name
 		studentNames.add(SarahDeleppo); // add SarahDeleppo string to list of student names
@@ -38,12 +40,11 @@ public class StudentList {
 		String KateKowalyshyn = "Kate Kowalyshyn"; //create string with name
 		studentNames.add(KateKowalyshyn); // add KateKowalyshyn string to list of student names
 
-		String StudentName7 = "Jeremy Morrison";   //added Jeremy Morrison as student 4 - updated to student 7 by KateKowalyshyn
-		studentNames.add(StudentName7);
-		
 		String StudentName8 = "Dakota Cromer";//added Dakota Cromer as student 5- updated to student 8 by KateKowalyshyn
 		studentNames.add(StudentName8);
 
+		String StudentName7 = "Jeremy Morrison";   //added Jeremy Morrison as student 4 - updated to student 7 by KateKowalyshyn
+		studentNames.add(StudentName7);
 		
 		String MichaelDarling = "Michael Darling";
 		studentNames.add(MichaelDarling); // Adding MichaelDarling to list of student names.
@@ -68,8 +69,8 @@ public class StudentList {
 		   //Module 6 Code Assignment - Add your own case statement for your profile. Use the above case statements as a template.
 			   
 		   case "PhilipEnkema_Playlist":
-			   PhilipEnkema_Playlist PhilipEnkemaPlaylist = new PhilipEnkema_Playlist();
-			   Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkemaPlaylist.StudentPlaylist());
+			   PhilipEnkema_Playlist PhilipEnkema_Playlist = new PhilipEnkema_Playlist();
+			   Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkema_Playlist.StudentPlaylist());
 			   return PhilipEnkema;
 			   
 		   case "KateKowalyshyn_Playlist":

@@ -41,6 +41,14 @@ public class StudentTest {
 	}
 	
 	@Test
+	public void testGetTennysonMcCallaList4() {
+		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
+		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
+		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
+		assertEquals("Tennyson McCalla", studentNames.get(3));				     			//test case to see if the third value contains the name we expect
+	}
+	
+	@Test
 	public void testContainsSarahDeleppoList() { //added by Sarah Deleppo
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
@@ -60,7 +68,7 @@ public class StudentTest {
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
-		assertEquals("Kate Kowalyshyn", studentNames.get(5));							//test case to see if the third value contains the name we expect
+		assertEquals("Kate Kowalyshyn", studentNames.get(6));							//test case to see if the third value contains the name we expect
 	}	
 	
 	@Test
@@ -72,19 +80,19 @@ public class StudentTest {
 	}
 
 	@Test
-	public void testGetJeremyMorrisonList4() {
-		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
-		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
-		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
-		assertEquals("Jeremy Morrison", studentNames.get(6));				     			//test case to see if the third value contains the name we expect
-	}
-	
-	@Test
 	public void testGetDakotaCromerList5() {
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
 		assertEquals("Dakota Cromer", studentNames.get(7));				     			//test case to see if the third value contains the name we expect
+	}
+
+	@Test
+	public void testGetJeremyMorrisonList4() {
+		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
+		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
+		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
+		assertEquals("Jeremy Morrison", studentNames.get(8));				     			//test case to see if the third value contains the name we expect
 	}
 		
 	//Module 6 Test Case Area
