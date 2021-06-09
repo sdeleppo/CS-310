@@ -120,4 +120,14 @@ public class StudentTest {
 		Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkema_Playlist.StudentPlaylist());
 		assertEquals("Philip Enkema", PhilipEnkema.getName());
 	}
+	
+	@Test
+	public void testGetSarahDeleppoProfile() {	//added Sarah Deleppo profile test  
+		//instantiate student profile
+		SarahDeleppo_Playlist SarahDeleppo_Playlist = new SarahDeleppo_Playlist();
+		//create new student from student profile
+		Student SarahDeleppo = new Student("Sarah Deleppo", SarahDeleppo_Playlist.StudentPlaylist());
+		//check that getName returns expected value "Sarah Deleppo"
+		assertEquals("Sarah Deleppo", SarahDeleppo.getName());
+	}
 }
