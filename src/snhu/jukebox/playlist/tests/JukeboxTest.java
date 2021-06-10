@@ -102,4 +102,12 @@ public class JukeboxTest {
 		 assertEquals(3, songList.size()); // Assert that track list contains 3 songs.
 
 	}
+	
+	@Test
+	public void testGetForeverALetDownAlbumSize() throws NoSuchFieldException, SecurityException {
+		ForeverALetDown artist = new ForeverALetDown(); // Create instance for ForeverALetDown class
+		 ArrayList<Song> songList = artist.getForeverALetDownsSongs(); // Declare a song list and populate list via ForeverALetDown class using getForeverALetDownsSongs method
+		 assertEquals(4, songList.size()); // Show that track list contains 4 songs.
+
+	}
 }
