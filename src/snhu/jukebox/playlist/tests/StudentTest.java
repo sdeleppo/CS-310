@@ -147,4 +147,10 @@ public class StudentTest {
 		assertEquals("Sarah Deleppo", SarahDeleppo.getName());
 
 	}
+	@Test
+	public void testGetKateKowalyshynProfile() {     // added KateKowalyshyn profile test
+		KateKowalyshyn_Playlist KateKowalyshyn_Playlist = new KateKowalyshyn_Playlist();
+		Student KateKowalyshyn = new Student("Kate Kowalyshyn", KateKowalyshyn_Playlist.StudentPlaylist());
+		assertEquals("Kate Kowalyshyn", KateKowalyshyn.getName());
+	}
 }
