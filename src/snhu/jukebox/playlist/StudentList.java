@@ -52,6 +52,9 @@ public class StudentList {
 		String GabrielSwortwood = "Gabriel Swortwood";  // create string with name
 		studentNames.add(GabrielSwortwood); // add GabrielSwortwood string to list of names
 		
+		String KaitlynFrench = "Kaitlyn French"; //created string with my name
+		studentNames.add(KaitlynFrench); //add KaitlynFrench string to list of student names
+		
 		return studentNames;
 	}
 
@@ -90,6 +93,11 @@ public class StudentList {
 			   SarahDeleppo_Playlist SarahDeleppo_Playlist = new SarahDeleppo_Playlist();
 			   Student SarahDeleppo = new Student("Sarah Deleppo", SarahDeleppo_Playlist.StudentPlaylist());
 			   return SarahDeleppo;
+			   
+		   case "KaitlynFrench_Playlist": //define new student Kaitlyn French with associated playlist
+			   KaitlynFrench_Playlist KaitlynFrench_Playlist = new KaitlynFrench_Playlist();
+			   Student KaitlynFrench = new Student("Kaitlyn French", KaitlynFrench_Playlist.StudentPlaylist());
+			   return KaitlynFrench;
 		}
 		return emptyStudent;
 	}
