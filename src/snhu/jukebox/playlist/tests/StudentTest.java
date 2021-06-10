@@ -161,4 +161,11 @@ public class StudentTest {
 		Student KateKowalyshyn = new Student("Kate Kowalyshyn", KateKowalyshyn_Playlist.StudentPlaylist());
 		assertEquals("Kate Kowalyshyn", KateKowalyshyn.getName());
 	}
+	
+	@Test
+	public void testGetKaitlynFrenchProfile() {
+		KaitlynFrench_Playlist KaitlynFrench_Playlist = new KaitlynFrench_Playlist();
+		Student KaitlynFrench = new Student("Kaitlyn French", KaitlynFrench_Playlist.StudentPlaylist());
+		assertEquals("Kaitlyn French", KaitlynFrench.getName());
+	}
 }
