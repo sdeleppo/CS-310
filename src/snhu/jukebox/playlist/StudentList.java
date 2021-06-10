@@ -52,6 +52,9 @@ public class StudentList {
 		String GabrielSwortwood = "Gabriel Swortwood";  // create string with name
 		studentNames.add(GabrielSwortwood); // add GabrielSwortwood string to list of names
 		
+		String KaitlynFrench = "Kaitlyn French"; //created string with my name
+		studentNames.add(KaitlynFrench); //add KaitlynFrench string to list of student names
+		
 		return studentNames;
 	}
 
