@@ -25,17 +25,17 @@ public class StudentList {
 		//String StudentName3 = "TestStudent3Name";
 		//studentNames.add(StudentName3);
 		
-		String GabrielSwortwood = "Gabriel Swortwood";  // create string with name
-		studentNames.add(GabrielSwortwood); // add GabrielSwortwood string to list of names
+		String StudentName3 = "Philip Enkema";  // added instructor as student 3
+		studentNames.add(StudentName3);
 		
 		String StudentName4 = "Tennyson McCalla";
 		studentNames.add(StudentName4);
 		
-		String SarahDeleppo = "Sarah Deleppo"; //create string with name
-		studentNames.add(SarahDeleppo); // add SarahDeleppo string to list of student names
-		
 		String TysonSmith = "Tyson Smith";
 		studentNames.add(TysonSmith);
+		
+		String SarahDeleppo = "Sarah Deleppo"; //create string with name
+		studentNames.add(SarahDeleppo); // add SarahDeleppo string to list of student names
 		
 		String KateKowalyshyn = "Kate Kowalyshyn"; //create string with name
 		studentNames.add(KateKowalyshyn); // add KateKowalyshyn string to list of student names
@@ -48,6 +48,9 @@ public class StudentList {
 		
 		String MichaelDarling = "Michael Darling";
 		studentNames.add(MichaelDarling); // Adding MichaelDarling to list of student names.
+		
+		String GabrielSwortwood = "Gabriel Swortwood";  // create string with name
+		studentNames.add(GabrielSwortwood); // add GabrielSwortwood string to list of names
 		
 		return studentNames;
 	}
@@ -74,21 +77,19 @@ public class StudentList {
 			   return PhilipEnkema;
 			   
 		   case "KateKowalyshyn_Playlist":
-			  KateKowalyshyn_Playlist KateKowalyshynPlaylist = new KateKowalyshyn_Playlist();
+			   KateKowalyshyn_Playlist KateKowalyshynPlaylist = new KateKowalyshyn_Playlist();
 			   Student KateKowalyshyn = new Student("Kate Kowalyshyn",KateKowalyshynPlaylist.StudentPlaylist());
 			   return KateKowalyshyn;
-			   
 
 		   case "GabrielSwortwood_Playlist":
-				  GabrielSwortwood_Playlist GabrielSwortwood_Playlist = new GabrielSwortwood_Playlist();
-				   Student GabrielSwortwood = new Student("Gabriel Swortwood", GabrielSwortwood_Playlist.StudentPlaylist());
-				   return GabrielSwortwood;
+			   GabrielSwortwood_Playlist GabrielSwortwood_Playlist = new GabrielSwortwood_Playlist();
+			   Student GabrielSwortwood = new Student("Gabriel Swortwood", GabrielSwortwood_Playlist.StudentPlaylist());
+			   return GabrielSwortwood;
 
 		   case "SarahDeleppo_Playlist": //define new student Sarah Deleppo with associated playlist
 			   SarahDeleppo_Playlist SarahDeleppo_Playlist = new SarahDeleppo_Playlist();
 			   Student SarahDeleppo = new Student("Sarah Deleppo", SarahDeleppo_Playlist.StudentPlaylist());
 			   return SarahDeleppo;
-
 		}
 		return emptyStudent;
 	}
