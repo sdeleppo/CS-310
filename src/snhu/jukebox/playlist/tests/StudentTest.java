@@ -163,7 +163,7 @@ public class StudentTest {
 	}
 	
 	@Test
-	public void testGetKaitlynFrenchProfile() {
+	public void testGetKaitlynFrenchProfile() { //added KaitlynFrench profile test
 		KaitlynFrench_Playlist KaitlynFrench_Playlist = new KaitlynFrench_Playlist();
 		Student KaitlynFrench = new Student("Kaitlyn French", KaitlynFrench_Playlist.StudentPlaylist());
 		assertEquals("Kaitlyn French", KaitlynFrench.getName());
