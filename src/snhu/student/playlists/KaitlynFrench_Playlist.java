@@ -98,6 +98,27 @@ public class KaitlynFrench_Playlist {
 	playlist.add(FleshgodApocalypseTracks.get(2));
 	playlist.add(FleshgodApocalypseTracks.get(3));
 	
+	//added EricChurch tracks to playlist
+	//create array list for EricChurch
+	//use getSong() method to add tracks to playlist
+	EricChurch ericChurch = new EricChurch();
+	ArrayList<Song> ericChurchTracks = new ArrayList<Song>();
+	ericChurchTracks = ericChurch.getEricChurchSongs();
+		
+	playlist.add(ericChurchTracks.get(0));
+	playlist.add(ericChurchTracks.get(1));
+	
+	//added Nirvana tracks to playlist
+	//create array list for Nirvana
+	//use getSong() method to add tracks to playlist
+	Nirvana nirvanaBand = new Nirvana();
+	ArrayList<Song> nirvanaTracks = new ArrayList<Song>();
+	nirvanaTracks = nirvanaBand.getNirvanaSongs();
+	
+	playlist.add(nirvanaTracks.get(0));
+	playlist.add(nirvanaTracks.get(1));
+	playlist.add(nirvanaTracks.get(2));
+	
 	
 	return playlist;
 	}
