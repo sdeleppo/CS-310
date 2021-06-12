@@ -103,6 +103,11 @@ public class StudentList {
 			   KaitlynFrench_Playlist KaitlynFrench_Playlist = new KaitlynFrench_Playlist();
 			   Student KaitlynFrench = new Student("Kaitlyn French", KaitlynFrench_Playlist.StudentPlaylist());
 			   return KaitlynFrench;
+		   
+		   case "MichaelDarling_Playlist": // Define new student Michael Darling with associated playlist
+			   MichaelDarling_Playlist MichaelDarling_Playlist = new MichaelDarling_Playlist();
+			   Student MichaelDarling = new Student("Michael Darling", MichaelDarling_Playlist.StudentPlaylist());
+			   return MichaelDarling;
 		}
 		return emptyStudent;
 	}
