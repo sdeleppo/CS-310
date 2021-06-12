@@ -32,7 +32,7 @@ public class SarahDeleppo_Playlist {
 	//instantiate peer's class Nirvana, create list for tracks, populate list with tracks
 	Nirvana nirvanaBand = new Nirvana();
 	ArrayList<Song> nirvanaTracks = new ArrayList<Song>();
-	nirvanaTracks = nirvanaBand.getNirvanaSongs();
+	nirvanaTracks = nirvanaBand.getSongs();
 	//add tracks to playlist
 	playlist.add(nirvanaTracks.get(0));
 	playlist.add(nirvanaTracks.get(1));
