@@ -82,9 +82,6 @@ public class KaitlynFrench_Playlist {
 	BillWithersTracks = BillWithersBand.getBillWithersSongs();
 	
 	playlist.add(BillWithersTracks.get(0));
-	playlist.add(BillWithersTracks.get(1));
-	playlist.add(BillWithersTracks.get(2));
-	playlist.add(BillWithersTracks.get(3));
 	
 	//add FleshgodApocalypse tracks to playlist
 	//create array list for FleshgodApocalypse
@@ -96,7 +93,6 @@ public class KaitlynFrench_Playlist {
 	playlist.add(FleshgodApocalypseTracks.get(0));
 	playlist.add(FleshgodApocalypseTracks.get(1));
 	playlist.add(FleshgodApocalypseTracks.get(2));
-	playlist.add(FleshgodApocalypseTracks.get(3));
 	
 	//added EricChurch tracks to playlist
 	//create array list for EricChurch
