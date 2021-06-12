@@ -23,7 +23,7 @@ public class MichaelDarling_Playlist {
 		
 		// Loops over all artists and adds that artist's songs to the playlist.
 		for (IArtist artist : artists) {
-			ArrayList<Song> songs = artist.GetSongs();
+			ArrayList<Song> songs = artist.getSongs();
 			playlist.addAll(songs);
 		}
 
