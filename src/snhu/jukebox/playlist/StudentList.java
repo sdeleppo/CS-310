@@ -25,7 +25,7 @@ public class StudentList {
 		//String StudentName3 = "TestStudent3Name";
 		//studentNames.add(StudentName3);
 		
-		String StudentName3 = "Philip Enkema";  // added instructor as student 3
+		String StudentName3 = "Philip Enkema";  			// added instructor as student 3
 		studentNames.add(StudentName3);
 		
 		String StudentName4 = "Tennyson McCalla";
@@ -34,26 +34,29 @@ public class StudentList {
 		String TysonSmith = "Tyson Smith";
 		studentNames.add(TysonSmith);
 		
-		String SarahDeleppo = "Sarah Deleppo"; //create string with name
-		studentNames.add(SarahDeleppo); // add SarahDeleppo string to list of student names
+		String SarahDeleppo = "Sarah Deleppo"; 				//create string with name
+		studentNames.add(SarahDeleppo); 					// add SarahDeleppo string to list of student names
 		
-		String KateKowalyshyn = "Kate Kowalyshyn"; //create string with name
-		studentNames.add(KateKowalyshyn); // add KateKowalyshyn string to list of student names
+		String KateKowalyshyn = "Kate Kowalyshyn"; 			//create string with name
+		studentNames.add(KateKowalyshyn); 					// add KateKowalyshyn string to list of student names
 
-		String StudentName8 = "Dakota Cromer";//added Dakota Cromer as student 5- updated to student 8 by KateKowalyshyn
+		String StudentName8 = "Dakota Cromer";				//added Dakota Cromer as student 5- updated to student 8 by KateKowalyshyn
 		studentNames.add(StudentName8);
 
-		String StudentName7 = "Jeremy Morrison";   //added Jeremy Morrison as student 4 - updated to student 7 by KateKowalyshyn
+		String StudentName7 = "Jeremy Morrison";   			//added Jeremy Morrison as student 4 - updated to student 7 by KateKowalyshyn
 		studentNames.add(StudentName7);
 		
 		String MichaelDarling = "Michael Darling";
-		studentNames.add(MichaelDarling); // Adding MichaelDarling to list of student names.
+		studentNames.add(MichaelDarling); 					// Adding MichaelDarling to list of student names.
 		
-		String GabrielSwortwood = "Gabriel Swortwood";  // create string with name
-		studentNames.add(GabrielSwortwood); // add GabrielSwortwood string to list of names
+		String GabrielSwortwood = "Gabriel Swortwood";  	// create string with name
+		studentNames.add(GabrielSwortwood); 				// add GabrielSwortwood string to list of names
 		
-		String KaitlynFrench = "Kaitlyn French"; //created string with my name
-		studentNames.add(KaitlynFrench); //add KaitlynFrench string to list of student names
+		String KaitlynFrench = "Kaitlyn French"; 			//created string with my name
+		studentNames.add(KaitlynFrench); 					//add KaitlynFrench string to list of student names
+		
+		String StudentName5 = "Peter Ozechowski";			//created string with my name
+		studentNames.add(StudentName5); 					//add Peter Ozechowski string to list of student names
 		
 		return studentNames;
 	}
