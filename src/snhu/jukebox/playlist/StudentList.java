@@ -28,6 +28,10 @@ public class StudentList {
 		String StudentName3 = "Philip Enkema";  			// added instructor as student 3
 		studentNames.add(StudentName3);
 		
+
+		String CharlesMerrick = "Charles Merrick";			//Create string CharlesMerrick for
+		studentNames.add(CharlesMerrick);					//name to be added to list
+		
 		String StudentName4 = "Tennyson McCalla";
 		studentNames.add(StudentName4);
 		
