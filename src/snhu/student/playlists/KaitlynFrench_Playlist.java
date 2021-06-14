@@ -109,7 +109,7 @@ public class KaitlynFrench_Playlist {
 	//use getSong() method to add tracks to playlist
 	Nirvana nirvanaBand = new Nirvana();
 	ArrayList<Song> nirvanaTracks = new ArrayList<Song>();
-	nirvanaTracks = nirvanaBand.getNirvanaSongs();
+	nirvanaTracks = nirvanaBand.getSongs();
 	
 	playlist.add(nirvanaTracks.get(0));
 	playlist.add(nirvanaTracks.get(1));
