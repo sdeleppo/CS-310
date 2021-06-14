@@ -175,4 +175,11 @@ public class StudentTest {
 		Student TennysonMcCalla = new Student("Tennyson McCalla", Tennyson_Playlist.StudentPlaylist());
 		assertEquals("Tennyson McCalla", TennysonMcCalla.getName());
 	}
+	
+	@Test
+	public void testGetMichaelDarlingProfile() {
+		MichaelDarling_Playlist playlist = new MichaelDarling_Playlist();
+		Student student = new Student("Michael Darling", playlist.StudentPlaylist());
+		assertEquals("Michael Darling", student.getName());
+	}
 }

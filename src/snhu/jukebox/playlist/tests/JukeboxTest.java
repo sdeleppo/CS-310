@@ -91,14 +91,14 @@ public class JukeboxTest {
 	@Test
 	public void testGetNirvanaAlbumSize() throws NoSuchFieldException, SecurityException {
 		 Nirvana artist = new Nirvana(); // Declare and instantiate object of type Nirvana.
-		 ArrayList<Song> songList = artist.getNirvanaSongs(); // Declare a song list and populate list via Nirvana class's getNirvanaSongs() method. 
+		 ArrayList<Song> songList = artist.getSongs(); // Declare a song list and populate list via base class GetSongs() method. 
 		 assertEquals(3, songList.size()); // Assert that track list contains 3 songs.
 	}
 	
 	@Test
 	public void testGetRunDMCAlbumSize() throws NoSuchFieldException, SecurityException {
 		 RunDMC artist = new RunDMC(); // Declare and instantiate object of type RunDMC.
-		 ArrayList<Song> songList = artist.getRunDMCSongs(); // Declare a song list and populate list via RunDMC class's getRunDMC() method. 
+		 ArrayList<Song> songList = artist.getSongs(); // Declare a song list and populate list via base class GetSongs() method.
 		 assertEquals(3, songList.size()); // Assert that track list contains 3 songs.
 
 	}
