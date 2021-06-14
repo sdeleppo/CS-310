@@ -198,7 +198,7 @@ public class StudentTest {
 		assertEquals("Peter Ozechowski", PeterOzechowski.getName());
 	}
 	@Test
-	public void testGetDakotaCromerProfile() {     									// added Peter Ozechowski student profile test
+	public void testGetDakotaCromerProfile() {     									// added Dakota Cromer student profile test
 		DakotaCromer_Playlist DakotaCromer_Playlist = new DakotaCromer_Playlist();
 		Student DakotaCromer = new Student("Dakota Cromer", DakotaCromer_Playlist.StudentPlaylist());
 		assertEquals("Dakota Cromer", DakotaCromer.getName());
