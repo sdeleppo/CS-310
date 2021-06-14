@@ -197,4 +197,10 @@ public class StudentTest {
 		Student PeterOzechowski = new Student("Peter Ozechowski", PeterOzechowski_Playlist.StudentPlaylist());
 		assertEquals("Peter Ozechowski", PeterOzechowski.getName());
 	}
+	@Test
+	public void testGetDakotaCromerProfile() {     									// added Peter Ozechowski student profile test
+		DakotaCromer_Playlist DakotaCromer_Playlist = new DakotaCromer_Playlist();
+		Student DakotaCromer = new Student("Dakota Cromer", DakotaCromer_Playlist.StudentPlaylist());
+		assertEquals("Dakota Cromer", DakotaCromer.getName());
+	}
 }
