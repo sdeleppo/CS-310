@@ -33,11 +33,27 @@ public class StudentTest {
 	//Module 5 - Add your unit test case here to check for your name after you have added it to the StudentList
 	
 	@Test
-	public void testGetPhilipEnkemaList3() {
+	public void testGetPhilipEnkema() {
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
-		assertEquals("Philip Enkema", studentNames.get(2));				     			//test case to see if the third value contains the name we expect
+		assertEquals("Philip Enkema", studentNames.get(2));							    //test case to see if the second value contains the name we expect
+	}
+	
+	@Test
+	public void testGetTennysonMcCallaList4() {
+		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
+		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
+		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
+		assertEquals("Tennyson McCalla", studentNames.get(3));				     			//test case to see if the third value contains the name we expect
+	}
+	
+	@Test
+	public void testGetTyosnSmithList4() {
+		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
+		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
+		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
+		assertEquals("Tyson Smith", studentNames.get(4));							//test case for pass/fail. We expect the first name to be TestStudent1Name. Remember arrays start their count at 0 not 1.
 	}
 	
 	@Test
@@ -49,20 +65,28 @@ public class StudentTest {
 	}	
 	
 	@Test
-	public void testGetTyosnSmithList4() {
-		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
-		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
-		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
-		assertEquals("Tyson Smith", studentNames.get(4));							//test case for pass/fail. We expect the first name to be TestStudent1Name. Remember arrays start their count at 0 not 1.
-	}
-	
-	@Test
 	public void testGetKateKowalyshynList() { //added by Kate Kowalyshyn
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
-		assertEquals("Kate Kowalyshyn", studentNames.get(5));							//test case to see if the third value contains the name we expect
+		assertEquals("Kate Kowalyshyn", studentNames.get(6));							//test case to see if the third value contains the name we expect
 	}	
+
+	@Test
+	public void testGetDakotaCromerList5() {
+		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
+		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
+		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
+		assertEquals("Dakota Cromer", studentNames.get(7));				     			//test case to see if the third value contains the name we expect
+	}
+
+	@Test
+	public void testGetJeremyMorrisonList4() {
+		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
+		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
+		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
+		assertEquals("Jeremy Morrison", studentNames.get(8));				     			//test case to see if the third value contains the name we expect
+	}
 	
 	@Test
 	public void testContainsMichaelDarlingList() {
@@ -71,23 +95,23 @@ public class StudentTest {
 		studentNames = studentList.getStudentsNames();									// Populate the studentNames list with the actual values in the StudentsList object.
 		assertTrue(studentNames.contains("Michael Darling"));							// Test case for pass/fail. Check to see if studentList contains name "Michael Darling", does not rely on arraylist index.
 	}
-
+	
 	@Test
-	public void testGetJeremyMorrisonList4() {
+	public void testGetGabrielSwortwoodList() {
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
-		assertEquals("Jeremy Morrison", studentNames.get(6));				     			//test case to see if the third value contains the name we expect
+		assertEquals("Gabriel Swortwood", studentNames.get(10));				     		//test case to see if the third value contains the name we expect
 	}
 	
 	@Test
-	public void testGetDakotaCromerList5() {
+	public void testGetKaitlynFrenchList() {
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
-		assertEquals("Dakota Cromer", studentNames.get(7));				     			//test case to see if the third value contains the name we expect
+		assertEquals("Kaitlyn French", studentNames.get(11));				     		//test case to see if the third value contains the name we expect
 	}
-		
+	
 	//Module 6 Test Case Area
 	//Test each student profile to ensure it can be retrieved and accessed
 	
@@ -119,5 +143,43 @@ public class StudentTest {
 		TysonSmith_Playlist tysonSmithPlaylist = new TysonSmith_Playlist();
 		Student tysonSmith = new Student("Tyson Smith", tysonSmithPlaylist.StudentPlaylist());
 		assertEquals("Tyson Smith", tysonSmith.getName());
+
+		
+	@Test
+	public void testGetGabrielSwortwoodProfile() {     // added student profile test
+		GabrielSwortwood_Playlist GabrielSwortwood_Playlist = new GabrielSwortwood_Playlist();
+		Student GabrielSwortwood = new Student("Gabriel Swortwood", GabrielSwortwood_Playlist.StudentPlaylist());
+		assertEquals("Gabriel Swortwood", GabrielSwortwood.getName());
+	}
+	
+	@Test
+	public void testGetSarahDeleppoProfile() {	//added Sarah Deleppo profile test  
+		//instantiate student profile
+		SarahDeleppo_Playlist SarahDeleppo_Playlist = new SarahDeleppo_Playlist();
+		//create new student from student profile
+		Student SarahDeleppo = new Student("Sarah Deleppo", SarahDeleppo_Playlist.StudentPlaylist());
+		//check that getName returns expected value "Sarah Deleppo"
+		assertEquals("Sarah Deleppo", SarahDeleppo.getName());
+
+	}
+	@Test
+	public void testGetKateKowalyshynProfile() {     // added KateKowalyshyn profile test
+		KateKowalyshyn_Playlist KateKowalyshyn_Playlist = new KateKowalyshyn_Playlist();
+		Student KateKowalyshyn = new Student("Kate Kowalyshyn", KateKowalyshyn_Playlist.StudentPlaylist());
+		assertEquals("Kate Kowalyshyn", KateKowalyshyn.getName());
+	}
+	
+	@Test
+	public void testGetKaitlynFrenchProfile() { //added KaitlynFrench profile test
+		KaitlynFrench_Playlist KaitlynFrench_Playlist = new KaitlynFrench_Playlist();
+		Student KaitlynFrench = new Student("Kaitlyn French", KaitlynFrench_Playlist.StudentPlaylist());
+		assertEquals("Kaitlyn French", KaitlynFrench.getName());
+	}
+		
+	@Test
+	public void testGetTennysonMcCallaProfile() {
+		Tennyson_Playlist Tennyson_Playlist = new Tennyson_Playlist();
+		Student TennysonMcCalla = new Student("Tennyson McCalla", Tennyson_Playlist.StudentPlaylist());
+		assertEquals("Tennyson McCalla", TennysonMcCalla.getName());
 	}
 }

@@ -25,28 +25,41 @@ public class StudentList {
 		//String StudentName3 = "TestStudent3Name";
 		//studentNames.add(StudentName3);
 		
-		
-		String StudentName3 = "Philip Enkema";  // added instructor as student 3
+		String StudentName3 = "Philip Enkema";  			// added instructor as student 3
 		studentNames.add(StudentName3);
 		
-		String SarahDeleppo = "Sarah Deleppo"; //create string with name
-		studentNames.add(SarahDeleppo); // add SarahDeleppo string to list of student names
+		String StudentName4 = "Tennyson McCalla";
+		studentNames.add(StudentName4);
 		
 		String TysonSmith = "Tyson Smith";
 		studentNames.add(TysonSmith);
 		
-		String KateKowalyshyn = "Kate Kowalyshyn"; //create string with name
-		studentNames.add(KateKowalyshyn); // add KateKowalyshyn string to list of student names
-
-		String StudentName7 = "Jeremy Morrison";   //added Jeremy Morrison as student 4 - updated to student 7 by KateKowalyshyn
-		studentNames.add(StudentName7);
+		String SarahDeleppo = "Sarah Deleppo"; 				//create string with name
+		studentNames.add(SarahDeleppo); 					// add SarahDeleppo string to list of student names
 		
-		String StudentName8 = "Dakota Cromer";//added Dakota Cromer as student 5- updated to student 8 by KateKowalyshyn
+		String KateKowalyshyn = "Kate Kowalyshyn"; 			//create string with name
+		studentNames.add(KateKowalyshyn); 					// add KateKowalyshyn string to list of student names
+
+		String StudentName8 = "Dakota Cromer";				//added Dakota Cromer as student 5- updated to student 8 by KateKowalyshyn
 		studentNames.add(StudentName8);
 
+		String StudentName7 = "Jeremy Morrison";   			//added Jeremy Morrison as student 4 - updated to student 7 by KateKowalyshyn
+		studentNames.add(StudentName7);
 		
 		String MichaelDarling = "Michael Darling";
-		studentNames.add(MichaelDarling); // Adding MichaelDarling to list of student names.
+		studentNames.add(MichaelDarling); 					// Adding MichaelDarling to list of student names.
+		
+		String GabrielSwortwood = "Gabriel Swortwood";  	// create string with name
+		studentNames.add(GabrielSwortwood); 				// add GabrielSwortwood string to list of names
+		
+		String KaitlynFrench = "Kaitlyn French"; 			//created string with my name
+		studentNames.add(KaitlynFrench); 					//add KaitlynFrench string to list of student names
+		
+		String StudentName5 = "Peter Ozechowski";			//created string with my name
+		studentNames.add(StudentName5); 					//add Peter Ozechowski string to list of student names
+		
+		String JeremyMorrison = "Jeremy Morrison";
+		studentNames.add(JeremyMorrison);
 		
 		return studentNames;
 	}
@@ -68,12 +81,17 @@ public class StudentList {
 		   //Module 6 Code Assignment - Add your own case statement for your profile. Use the above case statements as a template.
 			   
 		   case "PhilipEnkema_Playlist":
-			   PhilipEnkema_Playlist PhilipEnkemaPlaylist = new PhilipEnkema_Playlist();
-			   Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkemaPlaylist.StudentPlaylist());
+			   PhilipEnkema_Playlist PhilipEnkema_Playlist = new PhilipEnkema_Playlist();
+			   Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkema_Playlist.StudentPlaylist());
 			   return PhilipEnkema;
 			   
+		   case "Tennyson_Playlist":
+			   Tennyson_Playlist Tennyson_Playlist = new Tennyson_Playlist();
+			   Student TennysonMcCalla = new Student("Tennyson McCalla", Tennyson_Playlist.StudentPlaylist());
+			   return TennysonMcCalla;
+			   
 		   case "KateKowalyshyn_Playlist":
-			  KateKowalyshyn_Playlist KateKowalyshynPlaylist = new KateKowalyshyn_Playlist();
+			   KateKowalyshyn_Playlist KateKowalyshynPlaylist = new KateKowalyshyn_Playlist();
 			   Student KateKowalyshyn = new Student("Kate Kowalyshyn",KateKowalyshynPlaylist.StudentPlaylist());
 			   return KateKowalyshyn;
 
@@ -81,6 +99,26 @@ public class StudentList {
 			   TysonSmith_Playlist tysonSmithPlaylist = new TysonSmith_Playlist();
 			   Student tysonSmith = new Student("Tyson Smith", tysonSmithPlaylist.StudentPlaylist());
 			   return tysonSmith;
+
+		   case "GabrielSwortwood_Playlist":
+			   GabrielSwortwood_Playlist GabrielSwortwood_Playlist = new GabrielSwortwood_Playlist();
+			   Student GabrielSwortwood = new Student("Gabriel Swortwood", GabrielSwortwood_Playlist.StudentPlaylist());
+			   return GabrielSwortwood;
+
+		   case "SarahDeleppo_Playlist": //define new student Sarah Deleppo with associated playlist
+			   SarahDeleppo_Playlist SarahDeleppo_Playlist = new SarahDeleppo_Playlist();
+			   Student SarahDeleppo = new Student("Sarah Deleppo", SarahDeleppo_Playlist.StudentPlaylist());
+			   return SarahDeleppo;
+			   
+		   case "KaitlynFrench_Playlist": //define new student Kaitlyn French with associated playlist
+			   KaitlynFrench_Playlist KaitlynFrench_Playlist = new KaitlynFrench_Playlist();
+			   Student KaitlynFrench = new Student("Kaitlyn French", KaitlynFrench_Playlist.StudentPlaylist());
+			   return KaitlynFrench;
+			   
+		   case "JeremyMorrison_Playlist": //define new student Jeremy Morrison with associated playlist
+			   JeremyMorrison_Playlist JeremyMorrison_Playlist = new JeremyMorrison_Playlist();
+			   Student JeremyMorrison = new Student("Jeremy Morrison", JeremyMorrison_Playlist.StudentPlaylist());
+			   return JeremyMorrison;
 		}
 		return emptyStudent;
 	}

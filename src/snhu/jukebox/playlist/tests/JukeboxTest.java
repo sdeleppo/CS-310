@@ -63,6 +63,16 @@ public class JukeboxTest {
 		 herbAlpertTracks = herbAlpert.getHerbAlpertSongs();
 		 assertEquals(2, herbAlpertTracks.size());
 	}
+
+	
+	@Test     // added by g.swortwood
+	public void testGetInterpolAlbumSize() throws NoSuchFieldException, SecurityException {
+		 Interpol interPol = new Interpol(); // create instance of Interpol class
+		 ArrayList<Song> interPolTracks = new ArrayList<Song>(); // create list for Interpol class
+		 interPolTracks = interPol.getInterpolSongs(); // populate list with Interpol tracks from Interpol class
+		 assertEquals(5, interPolTracks.size()); // assert there are 5 songs in track list
+	}
+
 	@Test //added by Kate Kowalyshyn
 	public void testGetMorganWallenAlbumSize() throws NoSuchFieldException, SecurityException {
 		 MorganWallen morganWallen = new MorganWallen();	//create instance of Morgan Wallen class
@@ -87,8 +97,17 @@ public class JukeboxTest {
 	
 	@Test
 	public void testGetRunDMCAlbumSize() throws NoSuchFieldException, SecurityException {
-		 RunDMC artist = new RunDMC(); // Declare and instantiate object of type Nirvana.
-		 ArrayList<Song> songList = artist.getRunDMCSongs(); // Declare a song list and populate list via Nirvana class's getNirvanaSongs() method. 
+		 RunDMC artist = new RunDMC(); // Declare and instantiate object of type RunDMC.
+		 ArrayList<Song> songList = artist.getRunDMCSongs(); // Declare a song list and populate list via RunDMC class's getRunDMC() method. 
 		 assertEquals(3, songList.size()); // Assert that track list contains 3 songs.
+
+	}
+	
+	@Test
+	public void testGetForeverALetDownAlbumSize() throws NoSuchFieldException, SecurityException {
+		ForeverALetDown artist = new ForeverALetDown(); // Create instance for ForeverALetDown class
+		 ArrayList<Song> songList = artist.getForeverALetDownsSongs(); // Declare a song list and populate list via ForeverALetDown class using getForeverALetDownsSongs method
+		 assertEquals(4, songList.size()); // Show that track list contains 4 songs.
+
 	}
 }
