@@ -47,13 +47,19 @@ public class StudentList {
 		studentNames.add(StudentName7);
 		
 		String MichaelDarling = "Michael Darling";
-		studentNames.add(MichaelDarling); // Adding MichaelDarling to list of student names.
+		studentNames.add(MichaelDarling); 					// Adding MichaelDarling to list of student names.
 		
-		String GabrielSwortwood = "Gabriel Swortwood";  // create string with name
-		studentNames.add(GabrielSwortwood); // add GabrielSwortwood string to list of names
+		String GabrielSwortwood = "Gabriel Swortwood";  	// create string with name
+		studentNames.add(GabrielSwortwood); 				// add GabrielSwortwood string to list of names
 		
-		String KaitlynFrench = "Kaitlyn French"; //created string with my name
-		studentNames.add(KaitlynFrench); //add KaitlynFrench string to list of student names
+		String KaitlynFrench = "Kaitlyn French"; 			//created string with my name
+		studentNames.add(KaitlynFrench); 					//add KaitlynFrench string to list of student names
+		
+		String StudentName5 = "Peter Ozechowski";			//created string with my name
+		studentNames.add(StudentName5); 					//add Peter Ozechowski string to list of student names
+		
+		String JeremyMorrison = "Jeremy Morrison";
+		studentNames.add(JeremyMorrison);
 		
 		return studentNames;
 	}
@@ -108,6 +114,11 @@ public class StudentList {
 			   MichaelDarling_Playlist MichaelDarling_Playlist = new MichaelDarling_Playlist();
 			   Student MichaelDarling = new Student("Michael Darling", MichaelDarling_Playlist.StudentPlaylist());
 			   return MichaelDarling;
+			   
+		   case "JeremyMorrison_Playlist": //define new student Jeremy Morrison with associated playlist
+			   JeremyMorrison_Playlist JeremyMorrison_Playlist = new JeremyMorrison_Playlist();
+			   Student JeremyMorrison = new Student("Jeremy Morrison", JeremyMorrison_Playlist.StudentPlaylist());
+			   return JeremyMorrison;
 		}
 		return emptyStudent;
 	}
