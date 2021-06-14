@@ -46,7 +46,7 @@ public class StudentTest {
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
 		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
-		assertEquals("Homar Sanchez", studentNames.get(8));				     			//test case to see if the third value contains the name we expect
+		assertEquals("Homar Sanchez", studentNames.get(8));					     	    //test case to see if the third value contains the name we expect
 	}
 		
 	//Module 6 Test Case Area
@@ -73,5 +73,11 @@ public class StudentTest {
 		PhilipEnkema_Playlist PhilipEnkema_Playlist = new PhilipEnkema_Playlist();
 		Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkema_Playlist.StudentPlaylist());
 		assertEquals("Philip Enkema", PhilipEnkema.getName());
+	}
+		@Test
+		public void testGetHomarSanchezProfile() {     // added Homar Sanchez
+			HomarSanchez_Playlist HomarSanchez_Playlist = new HomarSanchez_Playlist();
+			Student HomarSanchez = new Student("Homar Sanchez", HomarSanchez_Playlist.StudentPlaylist());
+			assertEquals("Homar Sanchez", HomarSanchez.getName());
 	}
 }
