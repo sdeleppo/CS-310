@@ -108,6 +108,21 @@ public class JukeboxTest {
 		ForeverALetDown artist = new ForeverALetDown(); // Create instance for ForeverALetDown class
 		 ArrayList<Song> songList = artist.getForeverALetDownsSongs(); // Declare a song list and populate list via ForeverALetDown class using getForeverALetDownsSongs method
 		 assertEquals(4, songList.size()); // Show that track list contains 4 songs.
-
+	}
+	
+	@Test     // added by peter ozechowski
+	public void testGetLinkinParkAlbumSize() throws NoSuchFieldException, SecurityException {
+		 LinkinPark linkinPark = new LinkinPark();
+		 ArrayList<Song> linkinParkTracks = new ArrayList<Song>();
+		 linkinParkTracks = linkinPark.getLinkinParkSongs();
+		 assertEquals(3, linkinParkTracks.size());
+	}
+	
+	@Test     // added by peter ozechowski
+	public void testGetSum41AlbumSize() throws NoSuchFieldException, SecurityException {
+		Sum41 sum41 = new Sum41();
+		 ArrayList<Song> sum41Tracks = new ArrayList<Song>();
+		 sum41Tracks = sum41.getSum41Songs();
+		 assertEquals(3, sum41Tracks.size());
 	}
 }
