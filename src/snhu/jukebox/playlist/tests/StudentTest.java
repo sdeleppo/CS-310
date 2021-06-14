@@ -143,7 +143,7 @@ public class StudentTest {
 		TysonSmith_Playlist tysonSmithPlaylist = new TysonSmith_Playlist();
 		Student tysonSmith = new Student("Tyson Smith", tysonSmithPlaylist.StudentPlaylist());
 		assertEquals("Tyson Smith", tysonSmith.getName());
-
+	}
 		
 	@Test
 	public void testGetGabrielSwortwoodProfile() {     // added student profile test
