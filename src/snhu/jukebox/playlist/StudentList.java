@@ -55,7 +55,7 @@ public class StudentList {
 		String KaitlynFrench = "Kaitlyn French"; 			//created string with my name
 		studentNames.add(KaitlynFrench); 					//add KaitlynFrench string to list of student names
 		
-		String StudentName5 = "Peter Ozechowski";			//created string with my name
+		String StudentName5 = "Peter Ozechowski";			//created string with my name  ---mistake here?
 		studentNames.add(StudentName5); 					//add Peter Ozechowski string to list of student names
 		
 		return studentNames;
@@ -106,6 +106,12 @@ public class StudentList {
 			   KaitlynFrench_Playlist KaitlynFrench_Playlist = new KaitlynFrench_Playlist();
 			   Student KaitlynFrench = new Student("Kaitlyn French", KaitlynFrench_Playlist.StudentPlaylist());
 			   return KaitlynFrench;
+			   
+		   case "PeterOzechowski_Playlist": //define new student Peter Ozechowski with associated playlist
+			   PeterOzechowski_Playlist PeterOzechowski_Playlist = new PeterOzechowski_Playlist();
+			   Student PeterOzechowski = new Student("Peter Ozechowski", PeterOzechowski_Playlist.StudentPlaylist());
+			   return PeterOzechowski;
+			   
 		}
 		return emptyStudent;
 	}

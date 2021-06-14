@@ -111,6 +111,14 @@ public class StudentTest {
 		assertEquals("Kaitlyn French", studentNames.get(11));				     		//test case to see if the third value contains the name we expect
 	}
 	
+	@Test
+	public void testGetPeterOzechowski() {
+		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
+		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
+		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
+		assertEquals("Peter Ozechowski", studentNames.get(12));							//test case to see if the twelfth value contains the name we expect
+	}
+	
 	//Module 6 Test Case Area
 	//Test each student profile to ensure it can be retrieved and accessed
 	
@@ -174,5 +182,12 @@ public class StudentTest {
 		Tennyson_Playlist Tennyson_Playlist = new Tennyson_Playlist();
 		Student TennysonMcCalla = new Student("Tennyson McCalla", Tennyson_Playlist.StudentPlaylist());
 		assertEquals("Tennyson McCalla", TennysonMcCalla.getName());
+	}
+	
+	@Test
+	public void testGetPeterOzechowskiProfile() {     									// added Peter Ozechowski student profile test
+		PeterOzechowski_Playlist PeterOzechowski_Playlist = new PeterOzechowski_Playlist();
+		Student PeterOzechowski = new Student("Peter Ozechowski", PeterOzechowski_Playlist.StudentPlaylist());
+		assertEquals("Peter Ozechowski", PeterOzechowski.getName());
 	}
 }
