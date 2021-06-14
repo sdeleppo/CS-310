@@ -16,15 +16,15 @@ public class TysonSmith_Playlist {
 	
 	// Eninem Songs
 	ArrayList<Song> eminemTracks = new ArrayList<Song>();
-    Eminem eminem = new Eminem();
-    eminemTracks = eminem.getEminemSongs();
+  Eminem eminem = new Eminem();
+  eminemTracks = eminem.getEminemSongs();
 	
 	playlist.add(eminemTracks.get(1)); // Rap God
 	
 	// Paulo Londra songs
 	ArrayList<Song> pauloLondraTracks = new ArrayList<Song>();
-    PauloLondra pauloLondra = new PauloLondra();
-    pauloLondraTracks = pauloLondra.getPauloLondraSongs();
+  PauloLondra pauloLondra = new PauloLondra();
+  pauloLondraTracks = pauloLondra.getPauloLondraSongs();
 	
 	playlist.add(pauloLondraTracks.get(0)); // Forever Alone
 	playlist.add(pauloLondraTracks.get(1)); // Chica Paranormal
@@ -33,8 +33,8 @@ public class TysonSmith_Playlist {
 	
 	// Eric Church Songs
 	ArrayList<Song> ericChurchTracks = new ArrayList<Song>();
-    EricChurch ericChurch = new EricChurch();
-    ericChurchTracks = ericChurch.getEricChurchSongs();
+  EricChurch ericChurch = new EricChurch();
+  ericChurchTracks = ericChurch.getEricChurchSongs();
 	
 	playlist.add(ericChurchTracks.get(0)); // Heart on Fire
 	
