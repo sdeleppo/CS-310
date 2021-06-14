@@ -95,6 +95,11 @@ public class StudentList {
 			   Student KateKowalyshyn = new Student("Kate Kowalyshyn",KateKowalyshynPlaylist.StudentPlaylist());
 			   return KateKowalyshyn;
 
+		   case "TysonSmith_Playlist":
+			   TysonSmith_Playlist tysonSmithPlaylist = new TysonSmith_Playlist();
+			   Student tysonSmith = new Student("Tyson Smith", tysonSmithPlaylist.StudentPlaylist());
+			   return tysonSmith;
+
 		   case "GabrielSwortwood_Playlist":
 			   GabrielSwortwood_Playlist GabrielSwortwood_Playlist = new GabrielSwortwood_Playlist();
 			   Student GabrielSwortwood = new Student("Gabriel Swortwood", GabrielSwortwood_Playlist.StudentPlaylist());

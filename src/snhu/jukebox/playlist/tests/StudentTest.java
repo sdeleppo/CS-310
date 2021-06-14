@@ -48,6 +48,7 @@ public class StudentTest {
 		assertEquals("Tennyson McCalla", studentNames.get(3));				     			//test case to see if the third value contains the name we expect
 	}
 	
+	@Test
 	public void testGetTyosnSmithList4() {
 		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
 		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
@@ -136,6 +137,12 @@ public class StudentTest {
 		Student PhilipEnkema = new Student("Philip Enkema", PhilipEnkema_Playlist.StudentPlaylist());
 		assertEquals("Philip Enkema", PhilipEnkema.getName());
 	}
+	
+	@Test
+	public void testGetTysonSmithProfile() {
+		TysonSmith_Playlist tysonSmithPlaylist = new TysonSmith_Playlist();
+		Student tysonSmith = new Student("Tyson Smith", tysonSmithPlaylist.StudentPlaylist());
+		assertEquals("Tyson Smith", tysonSmith.getName());
 
 		
 	@Test
