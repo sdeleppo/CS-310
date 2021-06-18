@@ -125,4 +125,20 @@ public class JukeboxTest {
 		 sum41Tracks = sum41.getSum41Songs();
 		 assertEquals(3, sum41Tracks.size());
 	}
+	
+	@Test     // added by Ryan Bills
+	public void testGetDireStraitsAlbumSize() throws NoSuchFieldException, SecurityException {
+		 DireStraits direStraits = new DireStraits();
+		 ArrayList<Song> direStraitsTracks = new ArrayList<Song>();
+		 direStraitsTracks = direStraits.getDireStraitsSongs();
+		 assertEquals(2, direStraitsTracks.size());
+	}
+	
+	@Test     // added by Ryan Bills
+	public void testGetLedZeppelinAlbumSize() throws NoSuchFieldException, SecurityException {
+		 LedZeppelin ledZeppelin = new LedZeppelin();
+		 ArrayList<Song> ledZeppelinTracks = new ArrayList<Song>();
+		 ledZeppelinTracks = ledZeppelin.getLedZeppelinSongs();
+		 assertEquals(3, ledZeppelinTracks.size());
+	}
 }

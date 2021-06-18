@@ -119,6 +119,14 @@ public class StudentTest {
 		assertEquals("Peter Ozechowski", studentNames.get(12));							//test case to see if the twelfth value contains the name we expect
 	}
 	
+	@Test
+	public void testGetRyanBills() {
+		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
+		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
+		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
+		assertEquals("Ryan Bills", studentNames.get(14));							    //test case to see if the fourteenth value contains the name we expect
+	}
+	
 	//Module 6 Test Case Area
 	//Test each student profile to ensure it can be retrieved and accessed
 	
