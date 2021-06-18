@@ -61,6 +61,9 @@ public class StudentList {
 		String JeremyMorrison = "Jeremy Morrison";
 		studentNames.add(JeremyMorrison);
 		
+		String RyanBills = "Ryan Bills";					// Added RyanBills to list of student names
+		studentNames.add(RyanBills);
+		
 		return studentNames;
 	}
 
