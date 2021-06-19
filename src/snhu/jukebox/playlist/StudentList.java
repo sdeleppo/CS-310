@@ -58,9 +58,6 @@ public class StudentList {
 		String StudentName5 = "Peter Ozechowski";			//created string with my name  ---mistake here?
 		studentNames.add(StudentName5); 					//add Peter Ozechowski string to list of student names
 		
-		String JeremyMorrison = "Jeremy Morrison";
-		studentNames.add(JeremyMorrison);
-		
 		String RyanBills = "Ryan Bills";					// Added RyanBills to list of student names
 		studentNames.add(RyanBills);
 		
