@@ -135,6 +135,11 @@ public class StudentList {
 			   DakotaCromer_Playlist DakotaCromer_Playlist = new DakotaCromer_Playlist();
 			   Student DakotaCromer = new Student("Dakota Cromer", DakotaCromer_Playlist.StudentPlaylist());
 			   return DakotaCromer;
+			   
+		   case "RyanBills_Playlist":
+			   RyanBills_Playlist RyanBills_Playlist = new RyanBills_Playlist();
+			   Student RyanBills = new Student("Dakota Cromer", RyanBills_Playlist.StudentPlaylist());
+			   return RyanBills;
 		}
 		return emptyStudent;
 	}

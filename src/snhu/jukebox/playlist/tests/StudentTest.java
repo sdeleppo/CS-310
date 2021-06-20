@@ -211,4 +211,11 @@ public class StudentTest {
 		Student DakotaCromer = new Student("Dakota Cromer", DakotaCromer_Playlist.StudentPlaylist());
 		assertEquals("Dakota Cromer", DakotaCromer.getName());
 	}
+	
+	@Test
+	public void testGetRyanBillsProfile() {     									// added Ryan Bills student profile test
+		RyanBills_Playlist RyanBills_Playlist = new RyanBills_Playlist();
+		Student RyanBills = new Student("Ryan Bills",RyanBills_Playlist.StudentPlaylist());
+		assertEquals("Ryan Bills", RyanBills.getName());
+	}
 }
