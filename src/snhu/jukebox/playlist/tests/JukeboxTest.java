@@ -147,7 +147,7 @@ public class JukeboxTest {
 		 KendrickLamar kendrick = new KendrickLamar();
 		 ArrayList<Song> kendrickTracks = new ArrayList<Song>();
 		 kendrickTracks = kendrick.getKendrickSongs();
-		 assertEquals(3, kendrickTracks.size());
+		 assertEquals(4, kendrickTracks.size());
 	}
 	
 	@Test     // added by Tennyson McCalla
@@ -155,6 +155,6 @@ public class JukeboxTest {
 		 Coldplay coldplay = new Coldplay();
 		 ArrayList<Song> coldplayTracks = new ArrayList<Song>();
 		 coldplayTracks = coldplay.getColdplaySongs();
-		 assertEquals(3, coldplayTracks.size());
+		 assertEquals(1, coldplayTracks.size());
 	}
 }
