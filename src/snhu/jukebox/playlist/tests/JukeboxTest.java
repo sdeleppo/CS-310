@@ -141,4 +141,20 @@ public class JukeboxTest {
 		 ledZeppelinTracks = ledZeppelin.getLedZeppelinSongs();
 		 assertEquals(3, ledZeppelinTracks.size());
 	}
+	
+	@Test     // added by Tennyson McCalla
+	public void testGetKendrickAlbumSize() throws NoSuchFieldException, SecurityException {
+		 KendrickLamar kendrick = new KendrickLamar();
+		 ArrayList<Song> kendrickTracks = new ArrayList<Song>();
+		 kendrickTracks = kendrick.getKendrickSongs();
+		 assertEquals(3, kendrickTracks.size());
+	}
+	
+	@Test     // added by Tennyson McCalla
+	public void testGetColdplayAlbumSize() throws NoSuchFieldException, SecurityException {
+		 Coldplay coldplay = new Coldplay();
+		 ArrayList<Song> coldplayTracks = new ArrayList<Song>();
+		 coldplayTracks = coldplay.getColdplaySongs();
+		 assertEquals(3, coldplayTracks.size());
+	}
 }
