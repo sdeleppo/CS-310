@@ -157,4 +157,18 @@ public class JukeboxTest {
 		 coldplayTracks = coldplay.getColdplaySongs();
 		 assertEquals(1, coldplayTracks.size());
 	}
+	@Test     // added by Dakota Cromer
+	public void testGetEminemAlbumSize() throws NoSuchFieldException, SecurityException {
+		 Eminem eminem = new Eminem();
+		 ArrayList<Song> EminemTracks = new ArrayList<Song>();
+		 EminemTracks = eminem.getEminemSongs();
+		 assertEquals(2, EminemTracks.size());
+	}
+	@Test     // added by Dakota Cromer
+	public void testGetFiveFingerDeathPunchAlbumSize() throws NoSuchFieldException, SecurityException {
+		 FiveFingerDeathPunch ffdp = new FiveFingerDeathPunch();
+		 ArrayList<Song> FiveFingerDeathPunchTracks = new ArrayList<Song>();
+		 FiveFingerDeathPunchTracks = ffdp.getFiveFingerDeathPunchSongs();
+		 assertEquals(2, FiveFingerDeathPunchTracks.size());
+	}
 }
