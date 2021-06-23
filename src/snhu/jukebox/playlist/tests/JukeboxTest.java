@@ -103,7 +103,7 @@ public class JukeboxTest {
 
 	}
 	
-	@Test
+	@Test //added by Kaitlyn French
 	public void testGetForeverALetDownAlbumSize() throws NoSuchFieldException, SecurityException {
 		ForeverALetDown artist = new ForeverALetDown(); // Create instance for ForeverALetDown class
 		 ArrayList<Song> songList = artist.getForeverALetDownsSongs(); // Declare a song list and populate list via ForeverALetDown class using getForeverALetDownsSongs method
@@ -170,5 +170,12 @@ public class JukeboxTest {
 		 ArrayList<Song> FiveFingerDeathPunchTracks = new ArrayList<Song>();
 		 FiveFingerDeathPunchTracks = ffdp.getFiveFingerDeathPunchSongs();
 		 assertEquals(2, FiveFingerDeathPunchTracks.size());
+	}
+	
+	@Test //added by Kaitlyn French
+	public void testGetBonJoviAlbumSize() throws NoSuchFieldException, SecurityException {
+		BonJovi artist = new BonJovi(); // Create instance for BonJovi class
+		 ArrayList<Song> songList = artist.getBonJoviSongs(); // Declare a song list and populate list via BonJovi class using getBonJoviSongs method
+		 assertEquals(4, songList.size()); // Show that track list contains 4 songs.
 	}
 }
